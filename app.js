@@ -95,6 +95,8 @@ app.post('/download', (req, res) => {
   }
 })
 
-app.listen(port, () => {
-  console.log(`Listening on port http://localhost:${port}`);
-})
+app.listen(process.env.PORT || port, ()=>console.log(`Listening on port http://localhost:${port}`))
+
+// app.listen(port, () => {
+//   console.log(`Listening on port http://localhost:${port}`);
+// })
