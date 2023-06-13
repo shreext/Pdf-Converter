@@ -72,11 +72,9 @@ app.post('/download', (req, res) => {
 
           console.log(filename);
           // Downloading Pdf
-          (async () => {
-            await download(filename, './')
-            console.log(`File downloaded ${filename}`);
-
-          })()
+          res.redirect(filename);
+          console.log(`File downloaded ${filename}`);
+         
         }, function (rejected) {
           console.log(rejected); //an error occurred
         });
