@@ -55,11 +55,7 @@ app.post('/download', (req, res) => {
 
     if (validUrl.isUri(urlText)) {
       (async () => {
-
-        const browser = await puppeteer.launch({ executablePath: 'C:\Program Files\Google\Chrome\Application',
-           headless: false, args: ["--no-sandbox"] });
-
-        // const browser = await puppeteer.launch({ headless: false, args: ["--no-sandbox"] });
+        const browser = await puppeteer.launch({ headless: false, args: ["--no-sandbox"] });
 
         const page = await browser.newPage();
 
