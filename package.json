@@ -4,8 +4,8 @@
   "description": "Hi there, This is Anant Shree",
   "main": "app.js",
   "scripts": {
-    "start": "./node_modules/.bin/netlify-lambda serve app.js",
-    "build": "./node_modules/.bin/netlify-lambda build app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anant Shree",

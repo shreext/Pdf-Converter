@@ -10,14 +10,12 @@ const fs = require('fs');
 var Api2Pdf = require('api2pdf');
 var a2pClient = new Api2Pdf('42ad5101-43a6-448f-8c3e-a29b1733984b');
 const download = require('download')
-const router = express.Router();
 const app = express()
 const port = 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/static', express.static('static'))
-app.use(`/.netlify/functions/api`, router);
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
