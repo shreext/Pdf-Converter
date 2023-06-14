@@ -22,29 +22,29 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Setting View
 app.get('/', (req, res) => {
-  const con = "This is the best content on the internet so far so use it wisely"
-  const params = { 'title': 'PubG is the best game', "content": con }
+  const con = "Convert2PDF"
+  const params = { 'title': 'Convert2PDF Home', "content": con }
   res.status(200).render('index.pug', params);
 });
 
 // Privacy Policy Page
 app.get('/policy', (req, res) => {
-  const con = "This is the best content on the internet so far so use it wisely"
-  const params = { 'title': 'PubG is the best game', "content": con }
+  const con = "Convert2PDF"
+  const params = { 'title': 'Convert2PDF Privacy Policy', "content": con }
   res.status(200).render('policy.pug', params);
 });
 
 // Terms and Condition Page
 app.get('/terms', (req, res) => {
-  const con = "This is the best content on the internet so far so use it wisely"
-  const params = { 'title': 'PubG is the best game', "content": con }
+  const con = "Convert2PDF"
+  const params = { 'title': 'Convert2PDF Terms & Conditions', "content": con }
   res.status(200).render('terms.pug', params);
 });
 
 // Disclaimer Page
 app.get('/disclaimer', (req, res) => {
-  const con = "This is the best content on the internet so far so use it wisely"
-  const params = { 'title': 'PubG is the best game', "content": con }
+  const con = "Convert2PDF"
+  const params = { 'title': 'Convert2PDF Disclaimer', "content": con }
   res.status(200).render('disclaimer.pug', params);
 });
 
