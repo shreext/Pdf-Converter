@@ -73,8 +73,8 @@ app.post('/download', (req, res) => {
           console.log(filename);
           // Downloading Pdf
           // res.json(`Convert2PDF ${ filename}`);
-          res.json(filename);
-          // res.redirect(filename);
+          // res.json(filename);
+          res.redirect(filename);
 
         }, function (rejected) {
           console.log(rejected); //an error occurred
