@@ -74,7 +74,6 @@ app.post('/download', (req, res) => {
           // Downloading Pdf
           res.redirect(filename);
         
-
         }, function (rejected) {
           console.log(rejected); //an error occurred
         });
