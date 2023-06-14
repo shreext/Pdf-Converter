@@ -8,43 +8,46 @@ html(lang='en')
     link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
     link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM', crossorigin='anonymous')
     style.
-      .navbar{
+      .navbar {
       background: #181818;
       color: aliceblue;
       padding-left: 20px;
       }
-      .navbar-brand{
+      .navbar-brand {
       color: aliceblue;
       }
-      .navbar-brand:hover{
+      .navbar-brand:hover {
       color: #3d3d3d;
       }
-      body{
+      body {
       background: #121212;
       }
-      .card{
+      .card {
+      background: #181818;
       max-width: auto;
       margin: 50px;
-      background: #181818;
+      padding: 10px;
+      box-shadow: 50ch;
       border-radius: 20px;
       }
-      .card-header{
-      font-size: 3vw;
+      .card-header {
+      font-size: 1.8rem;
       font-weight: bold;
       color: aliceblue;
       }
-      .card-title{
-      font-size: 2vw;
+      .card-title {
+      font-size: 1rem;
       color: aliceblue;
       }
-      .form-control{
-      max-width: 40rem; margin: 30px;
+      .form-control {
+      max-width: 40rem;
+      margin: 30px;
       }
-      .btn{
+      .btn {
       max-width: 20rem;
       margin: 30px;
       }
-      .card-text{
+      .card-text {
       color: aliceblue;
       }
       p {
@@ -52,9 +55,9 @@ html(lang='en')
       font-family: cursive;
       font-weight: 500;
       }
-      .listB{
+      .listB {
       font-size: 15px;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
   body
     nav.navbar.navbar-expand-lg.navbar-dark
@@ -65,7 +68,7 @@ html(lang='en')
         ul.navbar-nav
           li.nav-item
             a#homeLink.nav-link.text-white(href='/')
-              | Home  
+              | Home 
               span.sr-only (current)
           li.nav-item
             a#termsLink.nav-link.text-white(href='/policy') Policy
@@ -89,33 +92,38 @@ html(lang='en')
               span.visually-hidden.spinnerCT Loading...
             .card.text-white.bg-dark.mb-3.mx-auto.d-block.text-center(style='max-width: 30rem; margin: 30px;')
               .card-body
-                h6.card-text.text-light(style='font-size: 1.3vw;') Wait for sometime, It will automatically download after sometime...
+                h6.card-text.text-light(style='font-size: 1.3vw;')
+                  | Wait for sometime, It will
+                  | automatically download after sometime...
     .container(style='margin-top: 50px; margin-bottom: 15px;')
-      .row
+      .row.center
         // 1
-        .card.border-dark.mb-3.mx-auto.w-50(style='max-width: 18rem;')
-          .card-header.text-center.font-weight-bold(style='font-size: 1.5vw;') Enter the URL
+        .card.border-dark.mx-auto(style='max-width: 18rem;')
+          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Enter the URL
           .card-body.text-dark
             // <img src="icons/url.jpg" class="rounded mx-auto d-block" alt="URL">
-            p.card-text.font-weight-bold(style='font-size: 1vw;')
+            p.card-text.text-center.font-weight-bold
               | To convert your web page into a PDF, enter the
               | appropriate website URL in the box including http:// or https://.
         // 2
-        .card.border-dark.mb-3.mx-auto.w-50(style='max-width: 18rem;')
-          .card-header.text-center.font-weight-bold(style='font-size: 1.5vw;') Press Enter
+        .card.border-dark.mx-auto(style='max-width: 18rem;')
+          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Press Enter
           .card-body.text-dark
             // <img src="icons/enter.jpg" class="rounded mx-auto d-block" alt="ENTER">
-            p.card-text.font-weight-bold(style='font-size: 1vw;')
+            p.card-text.text-center.font-weight-bold
               | It will take some time to fetch the URL based on
               | your internet speed.
         // 3
-        .card.border-dark.mb-3.mx-auto.w-50(style='max-width: 18rem;')
-          .card-header.text-center.font-weight-bold(style='font-size: 1.5vw;') Download the result
+        .card.border-dark.mx-auto(style='max-width: 18rem;')
+          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;')
+            | Download the result
           .card-body.text-dark
             // <img src="icons/download.jpg" class="rounded mx-auto d-block" alt="DOWNLOAD">
-            p.card-text.font-weight-bold(style='font-size: 1vw;')
+            p.card-text.text-center.font-weight-bold
               | After your file conversion has been completed,
               | view the new document by downloading it.
+    footer
+      p.text-light.text-center(style='font-family: Arial, Helvetica, sans-serif; font-weight: bold;') Copyright &copy; 2023 Convert2PDF
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
