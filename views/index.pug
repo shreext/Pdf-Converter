@@ -2,12 +2,12 @@ doctype html
 html(lang='en')
   head
     meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title Convert2PDF
-    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
-    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM', crossorigin='anonymous')
-    script(async='', src='https://www.googletagmanager.com/gtag/js?id=G-2LF1JCCFNT')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM' crossorigin='anonymous')
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-2LF1JCCFNT')
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
@@ -279,7 +279,7 @@ html(lang='en')
   body
     nav.navbar.navbar-expand-lg.navbar-dark
       span.navbar-brand.mb-0.h1.text-center(style='color: #9600c0;') Convert2PDF
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarNav.collapse.navbar-collapse
         ul.navbar-nav
@@ -297,9 +297,9 @@ html(lang='en')
             a#disLink.nav-link.text-white(href='/contact') Contact Us
     .logo
       .containerLogo
-        svg(viewBox='0 0 960 150', style='float: left;')
+        svg(viewBox='0 0 960 150' style='float: left;')
           symbol#s-text
-            text(text-anchor='middle', x='50%', y='80%') Convert2PDF
+            text(text-anchor='middle' x='50%' y='80%') Convert2PDF
           g.g-ants
             use.text-copy(xlink:href='#s-text')
             use.text-copy(xlink:href='#s-text')
@@ -313,10 +313,10 @@ html(lang='en')
           h5.card-title.text-center.h5
             | Convert HTML files or web pages into PDF files
             | online and in one click. &#x261D;
-          form(method='POST', action='/download')
-            input.form-control.rounded-pill.mx-auto.d-block.text-center(type='url', placeholder='Enter The URL', name='inputUrl')
+          form(method='POST' action='/download')
+            input.form-control.rounded-pill.mx-auto.d-block.text-center(type='url' placeholder='Enter The URL' name='inputUrl')
             #convertDiv(style='display: block;')
-              button#convertBtnT.btn.btn-lg.btn-block.mx-auto.d-block.rounded-pill(type='submit', name='convertBTN') Convert
+              button#convertBtnT.btn.btn-lg.btn-block.mx-auto.d-block.rounded-pill(type='submit' name='convertBTN') Convert
             #spinnerCT.text-center(style='display: none;')
               .spinner-border.text-primary(role='status')
                 span.visually-hidden.spinnerCT Loading...
@@ -330,13 +330,13 @@ html(lang='en')
         .front
           h5.card-title.text-lightfont-weight-bold(style='font-size: 1.2rem;')
             span(style='color: #9600c0;') Convert2PDF
-            |  is a website that
-                    allows users to convert web pages into PDF files. This can
-                    be
-                    useful for a
-                    variety of purposes, such as saving a web page for offline viewing, sharing a web page with others, or
-                    creating
-                    a document that can be easily printed.
+            is a website that
+            allows users to convert web pages into PDF files. This can
+            be
+            useful for a
+            variety of purposes, such as saving a web page for offline viewing, sharing a web page with others, or
+            creating
+            a document that can be easily printed.
           br
           p.card-text.text-light
             | To use Convert2PDF, simply enter the URL of the web page you want to convert
@@ -373,7 +373,7 @@ html(lang='en')
         .card.border-dark.mx-auto(style='max-width: 18rem;')
           .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Enter the URL &#x270D;
           .card-body.text-dark
-            img#urlImg.rounded.mx-auto.d-block(src='/icons/icons8-url-45(-hdpi).png', alt='URL')
+            img#urlImg.rounded.mx-auto.d-block(src='/icons/icons8-url-45(-hdpi).png' alt='URL')
             p.card-text.text-center
               | To convert your web page into a PDF, enter the
               | appropriate website URL in the box including http:// or https://.
@@ -381,7 +381,7 @@ html(lang='en')
         .card.border-dark.mx-auto(style='max-width: 18rem;')
           .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Press Enter &#x261D;
           .card-body.text-dark
-            img#enterImg.rounded.mx-auto.d-block(src='/icons/icons8-enter-48(-xhdpi).png', alt='ENTER')
+            img#enterImg.rounded.mx-auto.d-block(src='/icons/icons8-enter-48(-xhdpi).png' alt='ENTER')
             p.card-text.text-center
               | It will take some time to fetch the URL based on
               | your internet speed.
@@ -389,7 +389,7 @@ html(lang='en')
         .card.border-dark.mx-auto(style='max-width: 18rem;')
           .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Download the result &#x270C;
           .card-body.text-dark
-            img#downloadImg.rounded.mx-auto.d-block(src='/icons/icons8-download-48(-xhdpi).png', alt='DOWNLOAD')
+            img#downloadImg.rounded.mx-auto.d-block(src='/icons/icons8-download-48(-xhdpi).png' alt='DOWNLOAD')
             p.card-text.text-center
               | After your file conversion has been completed,
               | view the new document by downloading it.
@@ -422,35 +422,35 @@ html(lang='en')
             li
               a.social-icon(href='https://www.facebook.com/anant.shree.10?mibextid=ZbWKwL')
                 i.fa.fa-facebook
-                  img(src='/icons/icons8-facebook-24.png', alt='Facebook')
+                  img(src='/icons/icons8-facebook-24.png' alt='Facebook')
             li
               a.social-icon(href='https://twitter.com/shreext')
                 i.fa.fa-twitter
-                  img(src='/icons/icons8-twitter-30.png', alt='Twitter')
+                  img(src='/icons/icons8-twitter-30.png' alt='Twitter')
             li
               a.social-icon(href='https://instagram.com/webxttt?igshid=MzRlODBiNWFlZA==')
                 i.fa.fa-insta
-                  img(src='/icons/icons8-instagram-30.png', alt='Instagram')
+                  img(src='/icons/icons8-instagram-30.png' alt='Instagram')
             li
               a.social-icon(href='https://www.youtube.com/@effekts_0')
                 i.fa.fa-youtube
-                  img(src='/icons/icons8-youtube-30.png', alt='Youtube')
+                  img(src='/icons/icons8-youtube-30.png' alt='Youtube')
             li
               a.social-icon(href='https://www.linkedin.com/mwlite/in/anant-shree-438399208')
                 i.fa.fa-linkedin
-                  img(src='/icons/icons8-linkedin-30.png', alt='Linkedin')
+                  img(src='/icons/icons8-linkedin-30.png' alt='Linkedin')
             li
               a.social-icon(href='https://github.com/shreext')
                 i.fa.fa-github
-                  img(src='/icons/icons8-github-24.png', alt='Github')
+                  img(src='/icons/icons8-github-24.png' alt='Github')
     footer
       p.text-light.text-center(style='font-family: Arial, Helvetica, sans-serif; font-weight: bold;')
         | Copyright
         | &copy; 2023 Convert2PDF
-    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
-    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
-    script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
-    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz', crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz' crossorigin='anonymous')
     script.
       let convertBTN = document.getElementById('convertDiv');
       let spinnerCT = document.getElementById("spinnerCT");

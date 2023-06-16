@@ -17,6 +17,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/static', express.static('static'))
+app.use('/icons', express.static('icons'))
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
