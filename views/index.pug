@@ -10,7 +10,7 @@ html(lang='en')
     script(async='', src='https://www.googletagmanager.com/gtag/js?id=G-2LF1JCCFNT')
     script.
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', 'G-2LF1JCCFNT');
     style.
@@ -50,8 +50,16 @@ html(lang='en')
       margin: 30px;
       }
       .btn {
-      max-width: 20rem;
+      max-width: max-content;
       margin: 30px;
+      background-color: #9600c0;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      }
+      .btn:hover{
+      background-color: #9600c0;
+      color: white;
       }
       .card-text {
       color: aliceblue;
@@ -65,9 +73,212 @@ html(lang='en')
       font-size: 15px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
+      @import url(https://fonts.googleapis.com/css?family=Montserrat);
+      svg {
+      font: 5rem 'Montserrat';
+      }
+      .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 5% 15%;
+      stroke-width: 2px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+      }
+      .text-copy:nth-child(1) {
+      stroke: #4D163D;
+      animation-delay: -1;
+      }
+      .text-copy:nth-child(2) {
+      stroke: #840037;
+      animation-delay: -2s;
+      }
+      .text-copy:nth-child(3) {
+      stroke: #BD0034;
+      animation-delay: -3s;
+      }
+      .text-copy:nth-child(4) {
+      stroke: #BD0034;
+      animation-delay: -4s;
+      }
+      .text-copy:nth-child(5) {
+      stroke: #FDB731;
+      animation-delay: -5s;
+      }
+      @keyframes stroke-offset {
+      100% {
+      stroke-dashoffset: -35%;
+      }
+      }
+      @import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+      .cardF {
+      /* background: #181818; */
+      max-width: auto;
+      margin: 50px;
+      padding: 10px;
+      box-shadow: 50ch;
+      height: max-content;
+      }
+      .contentF {
+      padding: 20px;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      }
+      .cardF:hover .contentF {
+      transform: rotateY(180deg);
+      transition: transform 0.5s;
+      .front {
+      display: none;
+      }
+      .back {
+      display: block;
+      }
+      }
+      .front,
+      .back {
+      border-radius: 5px;
+      backface-visibility: hidden;
+      }
+      .back {
+      display: none;
+      transform: rotateY(180deg);
+      }
+      .rounded-pill {
+      margin-bottom: 15px;
+      max-width: auto;
+      }
+      /* Social Media */
+      @import url(https://fonts.googleapis.com/css?family=Lato);
+      @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+      body {
+      font-family: 'Lato', sans-serif;
+      /* color: #FFF; */
+      /* background: #322f30; */
+      -webkit-font-smoothing: antialiased;
+      }
+      a {
+      text-decoration: none;
+      color: #fff;
+      }
+      p>a:hover {
+      color: #d9d9d9;
+      text-decoration: underline;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+      margin: 1% 0 1% 0;
+      }
+      ._12 {
+      font-size: 1.2em;
+      }
+      ._14 {
+      font-size: 1.4em;
+      }
+      .footer-social-icons {
+      width: max-content;
+      display: block;
+      margin: 0 auto;
+      }
+      .social-icon {
+      color: #fff;
+      padding: 0;
+      list-style: none;
+      }
+      ul.social-icons {
+      margin-top: 10px;
+      }
+      .social-icons li {
+      vertical-align: top;
+      display: inline;
+      /* width: 30px; */
+      /* height: 30px; */
+      /* border-radius: 30px; */
+      }
+      .social-icons a {
+      color: #fff;
+      text-decoration: none;
+      }
+      .fa-facebook {
+      padding: 10px 14px;
+      max-width: 50px;
+      max-height: 50px;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: #121212;
+      }
+      .fa-facebook:hover {
+      background-color: #3d5b99;
+      }
+      .fa-twitter {
+      padding: 10px 14px;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: #121212;
+      }
+      .fa-twitter:hover {
+      background-color: #00aced;
+      }
+      .fa-insta {
+      padding: 10px 14px;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: #121212;
+      }
+      .fa-insta:hover {
+      background-color: #c13584;
+      }
+      .fa-youtube {
+      padding: 10px 14px;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: #121212;
+      }
+      .fa-youtube:hover {
+      background-color: #e64a41;
+      }
+      .fa-linkedin {
+      padding: 10px 14px;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: #121212;
+      }
+      .fa-linkedin:hover {
+      background-color: #0073a4;
+      }
+      .fa-github {
+      padding: 10px 14px;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      background-color: #121212;
+      }
+      .fa-github:hover {
+      background-color: #5a32a3;
+      }
   body
     nav.navbar.navbar-expand-lg.navbar-dark
-      span.navbar-brand.mb-0.h1.text-center Convert2PDF
+      span.navbar-brand.mb-0.h1.text-center(style='color: #9600c0;') Convert2PDF
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarNav.collapse.navbar-collapse
@@ -82,54 +293,160 @@ html(lang='en')
             a#termsLink.nav-link.text-white(href='/terms') Terms
           li.nav-item
             a#disLink.nav-link.text-white(href='/disclaimer') Disclaimer
+          li.nav-item
+            a#disLink.nav-link.text-white(href='/contact') Contact Us
+    .logo
+      .containerLogo
+        svg(viewBox='0 0 960 150', style='float: left;')
+          symbol#s-text
+            text(text-anchor='middle', x='50%', y='80%') Convert2PDF
+          g.g-ants
+            use.text-copy(xlink:href='#s-text')
+            use.text-copy(xlink:href='#s-text')
+            use.text-copy(xlink:href='#s-text')
+            use.text-copy(xlink:href='#s-text')
+            use.text-copy(xlink:href='#s-text')
     .card.text-white.mb-3
       .card-header.text-center
-        h1.h3 Web Page to Pdf
-      .card-body
-        h5.card-title.text-center.h5
-          | Convert HTML files or web pages into PDF files
-          | online and in one click.
-        form(method='POST', action='/download')
-          input.form-control.rounded.mx-auto.d-block.text-center(type='url', placeholder='Enter The URL', name='inputUrl')
-          #convertDiv(style='display: block;')
-            button#convertBtnT.btn.btn-primary.btn-lg.btn-block.mx-auto.d-block.rounded-pill(type='submit', name='convertBTN') Convert
-          #spinnerCT.text-center(style='display: none;')
-            .spinner-border.text-primary(role='status')
-              span.visually-hidden.spinnerCT Loading...
-            .card.text-white.bg-dark.mb-3.mx-auto.d-block.text-center(style='max-width: 30rem; margin: 30px;')
-              .card-body
-                h6.card-text.text-light(style='font-size: 0.8rem;')
-                  | Wait for a while, It will
-                  | downloaded automatically...
+        h1.h3 Web Page to Pdf &#x1F603;
+        .card-body
+          h5.card-title.text-center.h5
+            | Convert HTML files or web pages into PDF files
+            | online and in one click. &#x261D;
+          form(method='POST', action='/download')
+            input.form-control.rounded-pill.mx-auto.d-block.text-center(type='url', placeholder='Enter The URL', name='inputUrl')
+            #convertDiv(style='display: block;')
+              button#convertBtnT.btn.btn-lg.btn-block.mx-auto.d-block.rounded-pill(type='submit', name='convertBTN') Convert
+            #spinnerCT.text-center(style='display: none;')
+              .spinner-border.text-primary(role='status')
+                span.visually-hidden.spinnerCT Loading...
+              .card.text-white.bg-dark.mb-3.mx-auto.d-block.text-center(style='max-width: 30rem; margin: 30px;')
+                .card-body
+                  h6.card-text.text-light(style='font-size: 0.8rem;')
+                    | Wait for a while, It will
+                    | downloaded automatically...
+    .cardF
+      .card-body.contentF
+        .front
+          h5.card-title.text-lightfont-weight-bold(style='font-size: 1.2rem;')
+            span(style='color: #9600c0;') Convert2PDF
+            |  is a website that
+                    allows users to convert web pages into PDF files. This can
+                    be
+                    useful for a
+                    variety of purposes, such as saving a web page for offline viewing, sharing a web page with others, or
+                    creating
+                    a document that can be easily printed.
+          br
+          p.card-text.text-light
+            | To use Convert2PDF, simply enter the URL of the web page you want to convert
+            | into the text
+            | box on the website.
+            | You can also choose to include the entire web page or just a specific section of it. Once you have entered the
+            | URL, click on the &quot;Convert&quot; button. Convert2PDF will then convert the web page into a PDF file and save it to
+            | your computer.
+            | Convert2PDF is a free service that is available to anyone. It is a quick and easy way to convert web pages
+            | into
+            | PDF files.
+          h6.text-light(style='font-size: 1rem;') Hover, here to see benefits of using this tool...
+        .back
+          h5.card-title.text-lightfont-weight-bold(style='font-size: 1.2rem;')
+            | Here are some of the benefits of
+            | using 
+            span(style='color: #9600c0;')  Convert2PDF:
+          ul
+            li.card-text.text-light It is free to use.
+            li.card-text.text-light It is easy to use.
+            li.card-text.text-light It can convert any web page into a PDF file.
+            li.card-text.text-light The resulting PDF files are high quality.
+            li.card-text.text-light
+              | Convert2PDF is a reliable service that has been used by
+              | millions of people.
+            li.card-text.text-light
+              | If you need to convert a web page into a PDF file,
+              | Convert2PDF is a great option. It is
+              | free, easy to
+              | use, and can convert any web page into a high-quality PDF file.
     .container(style='margin-top: 50px; margin-bottom: 15px;')
       .row.center
         // 1
         .card.border-dark.mx-auto(style='max-width: 18rem;')
-          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Enter the URL
+          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Enter the URL &#x270D;
           .card-body.text-dark
-            // <img src="icons/url.jpg" class="rounded mx-auto d-block" alt="URL">
-            p.card-text.text-center.font-weight-bold
+            img#urlImg.rounded.mx-auto.d-block(src='/icons/icons8-url-45(-hdpi).png', alt='URL')
+            p.card-text.text-center
               | To convert your web page into a PDF, enter the
               | appropriate website URL in the box including http:// or https://.
         // 2
         .card.border-dark.mx-auto(style='max-width: 18rem;')
-          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Press Enter
+          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Press Enter &#x261D;
           .card-body.text-dark
-            // <img src="icons/enter.jpg" class="rounded mx-auto d-block" alt="ENTER">
-            p.card-text.text-center.font-weight-bold
+            img#enterImg.rounded.mx-auto.d-block(src='/icons/icons8-enter-48(-xhdpi).png', alt='ENTER')
+            p.card-text.text-center
               | It will take some time to fetch the URL based on
               | your internet speed.
         // 3
         .card.border-dark.mx-auto(style='max-width: 18rem;')
-          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;')
-            | Download the result
+          .card-title.text-center.font-weight-bold(style='font-size: 1.2rem;') Download the result &#x270C;
           .card-body.text-dark
-            // <img src="icons/download.jpg" class="rounded mx-auto d-block" alt="DOWNLOAD">
-            p.card-text.text-center.font-weight-bold
+            img#downloadImg.rounded.mx-auto.d-block(src='/icons/icons8-download-48(-xhdpi).png', alt='DOWNLOAD')
+            p.card-text.text-center
               | After your file conversion has been completed,
               | view the new document by downloading it.
+    .card.border-dark.mx-ma(style='max-width: max-content;')
+      .card-title
+        h5.text-center.font-weight-bold(style='font-size: 1.2rem;')
+          | Here are some additional details
+          | about how Convert2PDF works: &#x2728;
+        .card-body.text-dark
+          ul
+            li.card-text
+              | Convert2PDF uses a cloud-based service to convert web pages into PDF files. This means
+              | that you do not need to install any software on your computer to use Convert2PDF.
+            li.card-text
+              | Convert2PDF is a secure service. Your web pages are converted into PDF files on
+              | Convert2PDF&apos;s servers and are not stored on your computer.
+            li.card-text
+              | Convert2PDF is a privacy-friendly service. Your web pages are converted into PDF files
+              | anonymously and no personal information is collected.
+            li.card-text
+              | If you are looking for a free, easy to use, and reliable way to convert web pages into
+              | PDF
+              | files, Convert2PDF is a great option.
+    // Social Media
     footer
-      p.text-light.text-center(style='font-family: Arial, Helvetica, sans-serif; font-weight: bold;') Copyright &copy; 2023 Convert2PDF
+      .socialMedia
+        .footer-social-icons
+          h4._14.text-light.text-center Follow us on...
+          ul.social-icons
+            li
+              a.social-icon(href='https://www.facebook.com/anant.shree.10?mibextid=ZbWKwL')
+                i.fa.fa-facebook
+                  img(src='/icons/icons8-facebook-24.png', alt='Facebook')
+            li
+              a.social-icon(href='https://twitter.com/shreext')
+                i.fa.fa-twitter
+                  img(src='/icons/icons8-twitter-30.png', alt='Twitter')
+            li
+              a.social-icon(href='https://instagram.com/webxttt?igshid=MzRlODBiNWFlZA==')
+                i.fa.fa-insta
+                  img(src='/icons/icons8-instagram-30.png', alt='Instagram')
+            li
+              a.social-icon(href='https://www.youtube.com/@effekts_0')
+                i.fa.fa-youtube
+                  img(src='/icons/icons8-youtube-30.png', alt='Youtube')
+            li
+              a.social-icon(href='https://www.linkedin.com/mwlite/in/anant-shree-438399208')
+                i.fa.fa-linkedin
+                  img(src='/icons/icons8-linkedin-30.png', alt='Linkedin')
+            li
+              a.social-icon(href='https://github.com/shreext')
+                i.fa.fa-github
+                  img(src='/icons/icons8-github-24.png', alt='Github')
+    footer
+      p.text-light.text-center(style='font-family: Arial, Helvetica, sans-serif; font-weight: bold;')
+        | Copyright
+        | &copy; 2023 Convert2PDF
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')

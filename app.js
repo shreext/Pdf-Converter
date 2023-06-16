@@ -20,7 +20,7 @@ app.use('/static', express.static('static'))
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
-// Setting View
+// Setting View Home Page
 app.get('/', (req, res) => {
   const con = "Convert2PDF"
   const params = { 'title': 'Convert2PDF Home', "content": con }
@@ -46,6 +46,13 @@ app.get('/disclaimer', (req, res) => {
   const con = "Convert2PDF"
   const params = { 'title': 'Convert2PDF Disclaimer', "content": con }
   res.status(200).render('disclaimer.pug', params);
+});
+
+// Contact Us Page
+app.get('/contact', (req, res) => {
+  const con = "Convert2PDF"
+  const params = { 'title': 'Convert2PDF Contact Us', "content": con }
+  res.status(200).render('contact.pug', params);
 });
 
 // Download Method
